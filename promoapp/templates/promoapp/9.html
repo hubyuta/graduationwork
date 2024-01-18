@@ -1,0 +1,134 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>こめこめ蔵部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="{% url 'promo_index' %}"><img src="{% static 'images/komema-ku1.png' %}" alt="東京北海旅館"></a></h1>
+</header>
+
+<main>
+
+<article>
+
+<h2>9月<span>September</span></h2>
+
+<p class="c"><img src="{% static 'images/tukimi.jpg' %}" alt="" width="600" height="400"></p>
+
+<p class="c">
+    <br>今年で関東大震災から100年の追悼式が行われました。
+    <br>プロ野球ではリーグごとに阪神の18年ぶりセ・リーグ制覇、オリックスのパ・リーグ3連覇、
+    <br>また第2次岸田再改造内閣の発足、東芝のTOB成立と上場廃止の見通しなどが行われました。
+    
+    <br>そしてまだまだ夏の暑さが残る中
+    <br>田んぼの稲はたくさんの太陽を浴び大きく
+    <br>そして綺麗に成長しています。
+    <br>緑の中に黄金色の光がちらほら見え隠れしています
+    <br>早い農家では今月末には稲刈りが始まるようです
+    <br>トンボが稲に留まっているところをみるところは
+    <br>
+    <br><img src="{% static 'images/9gatu1.jpg' %}" alt="" width="400" height="300">
+    <br>
+</p>
+
+<p class="c">
+    <br>来月に控えた稲刈り
+    <br>去年の新米もそろそろ古米になってしまう…
+    <br>古米の良さを生かした料理を作ろう
+    <br>お米は長期間貯蔵している間にゆっくりと乾燥していきます。
+    <br>乾燥に伴い、吸水性が高く、あっさりとした味わいに変化していきます
+    <br>そのため、古米は「味をつけるごはん料理」にぴったりです
+    <br>炊き込みご飯、炒飯、ピラフ、パエリア、酢飯など活躍の場がたくさんあります。
+    <br>
+    <br><img src="{% static 'images/9gatu2.jpg' %}" alt="" width="400" height="300">
+    <br>
+</p>
+
+
+<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+
+</article>
+
+</main>
+
+<footer>
+
+<ul id="footermenu">
+<li><a href="{% url 'promo_index' %}">ホーム</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+    
+<div class="copy">
+<small>Copyright&copy; <a href="{% url 'promo_index' %}">こめこめ蔵部</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<h2>Contents</h2>
+<ul class="submenu">
+    <li><a href="{% url 'promo_index' %}">ホーム</a></li>
+    <li><a href="{% url 'greeting' %}">サイトの紹介</a></li>
+    <li><a href="{% url 'news' %}">News</a></li>
+    <li><a href="{% url 'dining' %}">お料理紹介</a></li>
+    <li><a href="{% url 'service' %}">農家さんの紹介</a></li>
+    <li><a href="{% url 'index' %}">オンラインショップ</a></li>
+    <li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href=""><i class="bi bi-facebook"></i></a></li>
+<li><a href=""><i class="bi bi-twitter"></i></a></li>
+<li><a href=""><i class="bi bi-youtube"></i></a></li>
+<li><a href=""><i class="bi bi-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="{% static 'js/jquery.inview_set.js' %}"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>こめこめ蔵部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="{% url 'promo_index' %}"><img src="{% static 'images/komema-ku1.png' %}" alt="東京北海旅館"></a></h1>
+</header>
+
+<ul class="lang-menu">
+    <li><a href="{% url 'index_en' %}">English</a></li>
+    </ul>
+<main>
+
+<section>
+
+<div class="title-bg" id="greeting">
+<h2 class="mb0"><div class="tate">サイト紹介</div><div class="yoko">Site introduction</div></h2>
+</div>
+
+</section>
+
+<section>
+
+<h2>サイトの目的</h2>
+
+<div class="c2">
+
+<div class="text text-l">
+<p><!--近年問題になっている農家さんを助けたいと思い立ち上げたサイトで。--><br>
+<!--このサイトは生産者と消費者を直接繋げるためのサイトになります。--></p>
+<p>今問題になっている農産業の問題ですが<br>
+近年の物価上昇の影響により様々なものに手が出せなくなってきています。身近のものでいうと野菜や果物などの食に関わるものです。<br>
+消費が減ると生産物が残ってしまい、生産者さんの収入が減ってしまいます。また処理の方にも費用がかかってしまいます。<br>
+収入が減ると生産者さんの生活が厳しくなり最悪の場合生産を続けていくことができなくなってしまいます。<br>
+そうすると生産数の母数が減り物価が上げっていくという悪循環が生まれてしまいます。<br>
+そんな状況を少しでも良い方向転換の小さなきっかけになればと思いこのサイトの作成を作ることを決めました。</p>
+<p></p>
+</div>
+<!--/.text-->
+
+<div class="image image-r">
+<figure><img src="{% static 'images/nouka.jpg' %}" alt="写真"></figure>
+</div>
+<!--/.image-->
+
+</div>
+
+</section>
+
+<section>
+
+    <br>
+    <br>
+    
+    <div class="c2">
+    
+    <div class="text text-r">
+    <p><!--近年問題になっている農家さんを助けたいと思い立ち上げたサイトで。--><br>
+    <!--このサイトは生産者と消費者を直接繋げるためのサイトになります。--></p>
+    <p>スーパーに並んでいるものは規格に合格したものが多いと思います。<br>
+        ですが訳ありの商品が時々並んでいることがあります。形はあれど味に変化がないのがほとんどです。<br>
+        しかし売れ残ってしまった場合の費用も考慮されているためあまり店舗での販売はしていません。<br>
+        大体の農家さんは生活の為に沢山のものを作られます。ですが出来たものの全部がお店に並ぶわけではありません。<br>
+        お店に並ぶのは大体8割で残りの2割は捨てられてしまうそうです。（2020年度 農林水産省 作況調査より）<br>
+        これはわかってる範囲で実際はもう少し数値は高いと思われます。<br>
+        仮に100万円分作ったとしても20~30万円分は捨てることになり、直売所等での販売だとそこから売れ残りなどの回収<br>
+        また売れなくなってしまったものを処理する費用などを考えると想像より手元にな凝らないと思います。<br>
+        ですが捨てる部分が少しでも売上に変えることが出来れば生産者さんの負担も軽減されるのではないかと思い農家さんと消費者を直接繋ぐサイトを作りました。<br>
+        <br>このサイトでは規格外のものを紹介・販売を目的としています。<br>
+        そして少しでも農産業などに興味を持っていただき力を貸していただければと思います。。</p>
+    <p></p>
+    </div>
+    <!--/.text-->
+    
+    <div class="image image-l">
+    <figure><img src="{% static 'images/5.png' %}" alt="写真"></figure>
+    </div>
+    <!--/.image-->
+    
+    </div>
+    
+    </section>
+
+</main>
+
+<footer>
+
+<ul id="footermenu">
+<li><a href="{% url 'promo_index' %}">ホーム</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+    
+<div class="copy">
+<small>Copyright&copy; <a href="{% url 'promo_index' %}">こめこめ蔵部</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<h2>Contents</h2>
+<ul class="submenu">
+    <li><a href="{% url 'promo_index' %}">ホーム</a></li>
+    <li><a href="{% url 'greeting' %}">サイトの紹介</a></li>
+    <li><a href="{% url 'news' %}">News</a></li>
+    <li><a href="{% url 'dining' %}">お料理紹介</a></li>
+    <li><a href="{% url 'service' %}">農家さんの紹介</a></li>
+    <li><a href="{% url 'index' %}">オンラインショップ</a></li>
+    <li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href=""><i class="bi bi-facebook"></i></a></li>
+<li><a href=""><i class="bi bi-twitter"></i></a></li>
+<li><a href=""><i class="bi bi-youtube"></i></a></li>
+<li><a href=""><i class="bi bi-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="{% static 'js/jquery.inview_set.js' %}"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

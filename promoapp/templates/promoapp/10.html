@@ -1,0 +1,137 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>こめこめ蔵部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="{% url 'promo_index' %}"><img src="{% static 'images/komema-ku1.png' %}" alt="東京北海旅館"></a></h1>
+</header>
+
+<main>
+
+<article>
+
+<h2>10月<span>October</span></h2>
+
+<p class="c"><img src="{% static 'images/harowin.jpg' %}" alt=""></p>
+
+<p class="c">
+    <br>1日に最低賃金の改定が行われ平均で43円引き上げられました。
+    <br>ジャニーズ事務所の性加害問題により「SMILE-UP.」に社名を変更し、被害者への補償後に廃業すると発表、
+    <br>全国の銀行間の資金決済を担う全銀システムで障害が発生、他行宛ての振り込みができなくなったりなど
+    <br>暗いニュースが多く報道された時期でもありました。
+ 
+    <br>夏の暑さが少しずつなくなり朝や夜は肌寒くなる日が増えてきました
+    <br>そんな中、月初に稲刈りが行われました
+    <br>今年の米の品質は昨年並みとのことで収穫量も昨年と同程度の量が取れたそうです
+    <br>
+    <br><img src="{% static 'images/10gatu1.jpg' %}" alt="">
+    <br>
+    <br>収穫後の田んぼは綺麗に根元だけ残しまた来年に向けて整えていきます。
+    <br>
+    <br><img src="{% static 'images/10gatu2.jpg' %}" alt="">
+    <br>
+</p>
+
+<p class="c">
+    <br>新米はやっぱり炊き立てでいただくのが一番美味しい
+    <br>ふっくらもっちりと炊きあがったご飯は
+    <br>しゃもじでふんわりとほぐします。
+    <br>そのときに、ご飯の粒をつぶさないように、鍋底にそって大きくしゃもじを使い
+    <br>こんもりと盛るようにすると美味しくなります。
+    <br>ぜひこの機会に土鍋で炊いてみたり
+    <br>旬のキノコやタケノコなどを入れて炊き込みご飯を作ってみたりと
+    <br>一年でもっとも美味しいお米の季節を逃さないよう、いろいろな調理法で新米を楽しんでみてください。
+    <br>
+    <br>
+    <br>
+
+</p>
+
+<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+
+</article>
+
+</main>
+
+<footer>
+
+<ul id="footermenu">
+    <li><a href="{% url 'promo_index' %}">ホーム</a></li>
+    <li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+    </ul>
+    
+    <div class="copy">
+    <small>Copyright&copy; <a href="{% url 'promo_index' %}">こめこめ蔵部</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<h2>Contents</h2>
+<ul class="submenu">
+    <li><a href="{% url 'promo_index' %}">ホーム</a></li>
+    <li><a href="{% url 'greeting' %}">サイトの紹介</a></li>
+    <li><a href="{% url 'news' %}">News</a></li>
+    <li><a href="{% url 'dining' %}">お料理紹介</a></li>
+    <li><a href="{% url 'service' %}">農家さんの紹介</a></li>
+    <li><a href="{% url 'index' %}">オンラインショップ</a></li>
+    <li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href=""><i class="bi bi-facebook"></i></a></li>
+<li><a href=""><i class="bi bi-twitter"></i></a></li>
+<li><a href=""><i class="bi bi-youtube"></i></a></li>
+<li><a href=""><i class="bi bi-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="{% static 'js/jquery.inview_set.js' %}"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

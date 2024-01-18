@@ -1,0 +1,55 @@
+{% extends "app/base.html" %}
+{% load widget_tweaks %}
+
+{% block content %}
+
+<div class="pt-5"></div>
+<div class="text-center mb-2">
+    <div class="d-flex justify-content-center mb-2">
+        <form method="GET" action="{% url "item_list" %}" class="mb-2">
+            {% for field in productorform %}
+                {{ field|add_class:"choice-form-control" }}
+            {% endfor %}
+            <button class="btn btn-outline-success ms-2" type="submit" value='{{ request.GET.query }}'>絞り込む</button>
+        </form>
+        <form method="GET" action="{% url "item_list" %}" class="ms-3 mb-2">
+            {% for field in priceform %}
+                {{ field|add_class:"choice-form-control" }}
+            {% endfor %}
+            <button class="btn btn-outline-success ms-2" type="submit" value='{{ request.GET.query }}'>絞り込む</button>
+        </form>
+    </div>
+    
+    <div class="row">
+        {% for item in page_obj %}
+            <div class="col-lg-3 col-md-6">
+                <div class="card img-thumbnail itemlist mb-3">
+                    <img src="{{ item.image1.url }}" alt="" class="card-img-top card-thum">
+                    <div class="card-body text-center px-2 py-3">
+                        <p class="mb-0 text-success">{{ item.category }} / {{ item.productor }}</p>
+                        <h5 class="font-weight-bold">{{ item.title }}</h5>
+                        <h4 class="font-weight-bold">
+                            {{ item.price }} 円/5kg
+                        </h4>
+                        <a href="{% url 'item_detail' item.slug %}" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="mt-3 d-flex justify-content-center align-items center">
+    {% include 'app/paginator.html' %}
+</div>
+
+{% endblock  %}
+
+{% block extra_js %}
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+        {% comment %} ScrollReveal().reveal(".card", { delay: 300 ,origin : "bottom" ,distance:"100px", interval:175 }); {% endcomment %}
+        ScrollReveal().reveal(".card", { duration:1200, scale: 0.75, opacity:0.3 });
+</script>
+{% endblock %}

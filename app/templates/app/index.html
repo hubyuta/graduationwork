@@ -1,0 +1,33 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+
+<div class="my-4">
+    <div class="bg-main d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center text-col1 pt-1 pb-1">こめこめ<ruby>蔵部<rt>くらぶ</rt></ruby> オンラインストア</h1>
+                <div class="d-flex align-items-center justify-content-center mt-2 mx-auto">
+                    <div class="main_img1 col-lg-12 col-md-10 mt-2"></div>
+                </div>
+                {% comment %} <h3 class="relate-youtube-head text-success text-center my-3 mx-auto">関連動画(YouTubeより転載)</h3>
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <iframe class="youtube-video" width="560" height="316" src="https://www.youtube.com/embed/IJT51et7owQ?si=xz2XbVk-S5MTFEKS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <iframe class="youtube-video" width="560" height="316" src="https://www.youtube.com/embed/NYpUeSdMTTY?si=j7zTnqm3rISZEI3d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div> {% endcomment %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+        ScrollReveal().reveal(".main_img1", { duration:1200, scale: 0.7, opacity:0.3 });
+</script>
+{% endblock %}

@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    /* background: lightyellow; */
+    background: rgb(253, 252, 241);
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    font-family: "Hannari";
+    background-image: linear-gradient(to top, rgba(255, 232, 185, 0.1) 0%, rgba(186, 248, 255, 0.1) 100%),url(https://img.freepik.com/free-vector/white-and-golden-foil-texture-background_1017-30092.jpg?size=626&ext=jpg&ga=GA1.1.130595914.1698194226&semt=sph);
+    background-size: cover;
+    position: relative;
+}
+
+main {
+    flex: 1;
+}
+
+/* .bg-main {
+    position: absolute;
+    top: 7.5%;
+    left: 0;
+    z-index: -1;
+    height: 92.5%;
+    width: 100%;
+    background-image:url(https://blog.acworks.co.jp/wp-content/uploads/2017/08/7a53acb9a31db7bc9c8f0b5397a016f1_m.jpg);
+    background-size: cover;
+} */
+
+.main_img1 {
+    height: 450px;
+    width: 650px;
+    background-image:url(https://blog.acworks.co.jp/wp-content/uploads/2017/08/7a53acb9a31db7bc9c8f0b5397a016f1_m.jpg);
+    border-radius: 50px;
+    z-index: 10;
+    background-size: cover;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.text-col1 {
+    color: white;
+    text-shadow: goldenrod 1px 0 10px;
+}
+
+.relate-youtube-head {
+    color: white !important;
+    text-shadow: green 1px 0 10px;
+}
+
+.logo {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.logo img{
+    height: 40px;
+}
+
+.nav-color {
+    background-color: palegoldenrod !important;
+}
+
+.nav-link {
+    color: darkgoldenrod !important;
+}
+
+.nav-link:hover {
+    color: goldenrod !important;
+    background-color: #f1f1f2;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    height: 60px;
+    width: 60px;
+    top: 3px;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.upward {
+    height: 60px;
+    width: 60px;
+    border: solid 1px #9f9f9f;
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0);
+    color: dimgray;
+    top: 88.5vh;
+    right: 0; 
+    position: fixed;
+    z-index: 1;
+}
+
+.main_img img{
+    height: 200px;
+    width:  300px;
+    
+}
+
+.card-profile {
+    width: 700px;
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    width: 150px;
+}
+
+.btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    font-weight: bold;
+}
+
+.profile_table {
+    width: 100%;
+    border: 1px solid #D1DBEB;
+    border-radius: 8px;
+    border-collapse: separate;
+    overflow: hidden;
+}
+
+.profile_table .header {
+    width: 200px;
+    padding: 16px 24px;
+    text-align: left;
+    background: #F1F5FA;
+}
+
+.profile_table .data {
+    padding: 16px 24px;
+}
+
+th {
+    background-color: lightgray;
+}
+
+.form_wrap {
+    display: grid;
+    gap: 16px;
+}
+
+.form_wrap2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.card-auth {
+    width: 400px;
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.graph-card .card {
+    max-height: 700px;
+}
+
+.graph-card .card .card-header{
+    height: 80%;
+    background-image: url("https://cdn.pixabay.com/photo/2016/08/15/06/35/rice-1594612_1280.jpg");
+    background-size: cover;
+}
+
+.graph-card .card .card-header img{
+    height: 100%;
+    max-width: 100%;
+}
+
+.graph-card .card .card-body{
+    height: 20%;
+}
+
+.graph-index-card .card {
+    height: 150px;
+    width: auto;
+}
+
+.graph-index-card .card .card-header{
+    background-color: #030;
+    height: 80%;
+}
+.graph-index-card .card .card-header p{
+    color : white;
+    text-shadow: lightblue 1px 0 10px;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.graph-index-card .card .card-header img{
+    height: 100%;
+    width: 100%;
+}
+
+.graph-index-card .card .card-body{
+    height: 20%;
+}
+
+.quote {
+    font-size: 12px;
+}
+
+.font-auth {
+    width: 100%;
+}
+
+.form-label-group {
+    margin-bottom: 1rem;
+}
+
+.form-label-group input {
+    border-radius: 2rem;
+}
+
+.itemlist img {
+    height: 150px;
+    object-fit: contain;
+}
+
+.product img {
+    height: 350px;
+    object-fit: contain;
+}
+
+.order img {
+    height: 100px;
+    object-fit: contain;
+}
+
+.visual {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+.visual img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.StripeElement {
+    background-color: #f1f1f1;
+    height: 40px;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+    border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+}
+
+/* contact section */
+
+form input.term-form-control {
+    height: 56px;
+    width: 300px;
+}
+
+form .term-form-control {
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(141, 143, 84, 0.2);
+}
+
+form input.form-control {
+    height: 56px;
+}
+
+form .form-control {
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(141, 143, 84, 0.2);
+}
+
+form input.form-control-contact {
+    height: 56px;
+}
+
+form .form-control-contact {
+    width: 80vw;
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(30, 30, 100, 0.04);
+}
+
+.form-check {
+    color: rgb(0, 200, 170);
+    text-align: center;
+    font-weight: 100;
+}
+
+form .choice-form-control {
+    min-width: 25%;
+    border: solid 1px green;
+    border-radius: 0;
+    background-color: rgba(146, 193, 134, 0.2);
+}
+
+.table-design {
+    min-height: 300px;
+    width: 100%;
+    background-color: rgba(141, 143, 84, 0.2);
+}
+
+.table-design tr th {
+    color: #fa755a;
+    background-color:  rgba(158, 255, 186, 0.2) !important;
+    min-width: 200px;
+}
+
+/* ページネーション用 */
+
+.page-item.active .page-link {
+    color: white !important;
+    border: none;
+    background-color: green;
+}
+
+.page-item a:hover {
+    color: white;
+    background-color: lightgreen;
+}
+
+.page-item a {
+    color: darkgreen !important;
+    /* background-color: rgb(187, 235, 187); */
+}
+
+/* .page-item.disabled a {
+    background-color: rgb(158, 196, 158);
+} */
+

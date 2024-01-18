@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Hannari";
+}
+
+body {
+    background: honeydew;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+section {
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+h1, h3{
+    color: darkgreen;
+}
+
+.p_logo{
+    color: darkolivegreen !important;
+    text-decoration: none;
+}
+
+.p_logo:hover {
+    color: limegreen !important;
+    font-weight: bold;
+}
+
+.p_logo img {
+    width: 30px;
+}
+
+.nav-bgcol {
+    background-color: #F1F1F1 !important;
+}
+
+.nav-link {
+    color: darkolivegreen !important;
+}
+
+.nav-link:hover {
+    color: lightgreen !important;
+    background-color: #f1f1f2;
+    font-weight: bold;
+}

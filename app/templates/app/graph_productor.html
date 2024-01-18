@@ -1,0 +1,45 @@
+{% extends "app/base.html" %}
+{% load widget_tweaks %}
+
+{% block content %}
+
+<h3 class="text-center mt-3">統計情報</h3>
+<div class="container d-flex justify-content-center">
+    <div class="row my-3">
+        <div class="graph-card col-lg-12 col-md-10 mx-auto">
+            <div class="card itemlist mb-3">
+                <div class="card-header text-center">
+                    <img class="mx-auto" src="data:image/png;base64,{{ chart1 | safe }}">
+                </div>
+                <div class="card-bory d-flex flex-column justify-content-center align-items-center">
+                    <p class="quote mx-2">※出典：政府統計の総合窓口(e-Stat) / 令和4年新規就農者調査結果（https://www.e-stat.go.jp/stat-search/files/data?sinfid=000040080140&ext=xls）<br>
+                        ※「新規就農者調査」（農林水産省）を加工して作成</p>
+                </div>
+                <div class="d-flex justify-content-center mb-2">
+                    <form action="{% url 'graph_crop' %}" method='GET'>
+                        {{ form.term|add_class:"term-form-control"|attr:"placeholder=期間を５～５０の数値で入力して下さい" }}
+                        <button class="btn btn-success mx-auto mb-3" type="submit" value='{{ request.GET.term }}'>更新</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="graph-card col-lg-12 col-md-10 mx-auto">
+            <div class="card itemlist mb-3">
+                <div class="card-header text-center">
+                    <img class="mx-auto" src="data:image/png;base64,{{ chart2 | safe }}">
+                </div>
+                <div class="card-bory d-flex flex-column justify-content-center align-items-center">
+                    <p class="quote mx-2">※出典：政府統計の総合窓口(e-Stat) / 令和4年新規就農者調査結果（https://www.e-stat.go.jp/stat-search/files/data?sinfid=000040080140&ext=xls）<br>
+                        ※「新規就農者調査」（農林水産省）を加工して作成</p>
+                </div>
+                <div class="d-flex justify-content-center mb-2">
+                    <form action="{% url 'graph_crop' %}" method='GET'>
+                        {{ form.term|add_class:"term-form-control"|attr:"placeholder=期間を５～５０の数値で入力して下さい" }}
+                        <button class="btn btn-success mx-auto mb-3" type="submit" value='{{ request.GET.term }}'>更新</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock  %}

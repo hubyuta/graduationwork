@@ -1,0 +1,186 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>こめこめ蔵部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+<link rel="stylesheet" href="{% static 'css/slide.css' %}">
+</head>
+
+<body class="home ja">
+
+<div id="container">
+
+<header>
+    
+<h1 id="logo"><a href="{% url 'promo_index' %}"><img src="{% static 'images/komema-ku2.png' %}" alt="東京北海旅館"></a></h1>
+
+<nav>
+<ul>
+<li><a href="{% url 'greeting' %}">サイトの紹介</a></li>
+<li><a href="{% url 'news' %}">NEWS</a></li>
+<li><a href="{% url 'dining' %}">お料理紹介</a></li>
+<li><a href="{% url 'service' %}">農家さんの紹介</a></li>
+<li><a href="{% url 'index' %}">オンラインショップ</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+</nav>
+
+<!--スライドショー-->
+<div class="slide1">slide1</div>
+<div class="slide2">slide2</div>
+<div class="slide3">slide3</div>
+<div class="slide4">slide4</div>
+<div class="slide5">slide5</div>
+
+</header>
+
+<ul class="lang-menu">
+<li><a href="{% url 'index_en' %}">English</a></li>
+</ul>
+
+<main>
+
+<section class="blur">
+
+<div class="title-bg">
+<h2><div class="tate">お知らせ</div><div class="yoko">News</div></h2>
+</div>
+
+<div class="new">
+
+<dl>
+<dt>2023.04.01</dt>
+<dd>サイト作成開始。</dd>
+<dt>2023.05.12</dt>
+<dd>5月の記事を更新しました。</dd>
+<dt>2023.06.09</dt>
+<dd>6月の記事を更新しました。</dd>
+<dt>2023.07.01</dt>
+<dd>7月の記事を更新しました。</dd>
+</dl>
+
+<div class="r">
+<p class="animation-btn">
+<a href="{% url 'news' %}" class="animation-btn-inner">もっとみる<i class="bi bi-arrow-right"></i></a>
+</p>
+</div>
+
+</div>
+<!--/.new-->
+
+</section>
+
+<section class="blur">
+
+<h2 class="dn">フォトギャラリー</h2>
+
+<div class="list-slide">
+
+<figure><img src="{% static 'images/1.jpg' %}" alt=""></figure>
+
+<figure><img src="{% static 'images/2.jpg' %}" alt=""></figure>
+
+<figure><img src="{% static 'images/3.jpg' %}" alt=""></figure>
+
+<figure><img src="{% static 'images/4.jpg' %}" alt=""></figure>
+
+<figure><img src="{% static 'images/5.png' %}" alt=""></figure>
+
+<figure><img src="{% static 'images/1.jpg' %}" alt=""></figure>
+
+<figure><img src="{% static 'images/2.jpg' %}" alt=""></figure>
+
+<figure><img src="{% static 'images/3.jpg' %}" alt=""></figure>
+
+<figure><img src="{% static 'images/4.jpg' %}" alt=""></figure>
+
+<figure><img src="{% static 'images/5.png' %}" alt=""></figure>
+
+</div>
+<!--/.list-slide-->
+
+</section>
+
+<section class="blur">
+
+
+
+</section>
+
+</main>
+
+<footer>
+
+<ul id="footermenu">
+<li><a href="{% url 'index' %}">ホーム</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+
+<div class="copy">
+<small>Copyright&copy; <a href="{% url 'index' %}">こめこめ蔵部</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<h2>Contents</h2>
+<ul class="submenu">
+<li><a href="{% url 'index' %}">ホーム</a></li>
+<li><a href="{% url 'greeting' %}">サイトの紹介</a></li>
+<li><a href="{% url 'news' %}">News</a></li>
+<li><a href="{% url 'dining' %}">お料理紹介</a></li>
+<li><a href="{% url 'service' %}">農家さんの紹介</a></li>
+<li><a href="{% url 'index' %}">オンラインショップ</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href=""><i class="bi bi-facebook"></i></a></li>
+<li><a href=""><i class="bi bi-twitter"></i></a></li>
+<li><a href=""><i class="bi bi-youtube"></i></a></li>
+<li><a href=""><i class="bi bi-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="{% static 'js/jquery.inview_set.js' %}"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'js/slick.js'%}"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

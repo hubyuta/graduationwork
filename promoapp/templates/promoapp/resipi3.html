@@ -1,0 +1,159 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>こめこめ蔵部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="{% url 'promo_index' %}"><img src="{% static 'images/komema-ku1.png' %}" alt="東京北海旅館"></a></h1>
+</header>
+
+<main>
+
+<article>
+
+<h2>パエリア<span></span></h2>
+
+<p class="c"><img src="{% static 'images/paeria.jpg' %}" alt=""></p>
+
+<table class="ta1">
+<caption>ルセット（2人分）</caption>
+<tr>
+<th></th>
+<td><p>いか…小1パイ分（100g）</p>
+    <p>白身魚（切り身）…小1枚（100g）</p>
+    <p>玉ねぎ…40g</p>
+    <p>にんじん…20g</p>
+    <p>セロリ…20g </p>
+    <p>にんにく…2片</p>
+    <p>トマト缶（ホール）…1/2カップ（100g）</p>
+    <p>有頭えび…5尾（200g）</p>
+    <p>あさり（砂抜き済）…15～16個（100g）</p>
+    <p>水…600ml（※）<br>
+        ※直径26cm以下のフライパンを使う場合や、コンロの火力が弱いと感じる場合、水の分量は500ml</p>
+    <p>塩…小さじ1/2</p> 
+    <p>サフラン…10本</p>
+    <p>米…1合（180ml）</p>
+    <p>レモン、イタリアンパセリ…お好みで</p>
+    <p>オリーブ油…1/4カップ（50ml）</p>
+</td>
+</tr>
+
+
+</table>
+<table class="ta1">
+<caption>作り方</caption>
+<tr>
+<th></th>
+<td><p><b>1. 魚介は食べやすい大きさに、野菜はみじん切りにする</b><br>
+    いかは輪切りにし、白身魚は食べやすい大きさに切ります。<br>
+    玉ねぎ、にんじん、セロリ、にんにくはみじん切りに。<br>
+    トマト缶のホールは手で握りつぶしておきます。</p>
+    <p><b>2. いかと野菜をじっくり炒める</b><br>
+        フライパンにオリーブ油を中火で熱し、いかの両面に焦げ目がつくまで焼き<br>
+        ①の玉ねぎ、にんじん、セロリ、にんにくを加えて玉ねぎが透明になるまで炒めます。</p>
+    <p><b>3. つぶしたトマトを加えて煮詰める</b><br>
+        ①でつぶしたトマトを加え、水分がなくなるまで中火で煮詰めます。<br>
+        しっかり煮詰めましょう。<br>
+       （トマトは水分を飛ばすことで酸味がやわらぎ、うまみが凝縮されます）</p>
+    <p><b>4.残りの魚介と水、塩、サフランを加え、煮立ったら魚介を取り出す</b><br>
+        有頭えび、あさり、白身魚、水、塩、サフランを加えて強火にかけ、ひと煮立ちしたら魚介を取り出します。<br>
+        えびを取り出すときは熱いので、いったん火を消してもOK。<br>
+        （ングでえびの頭をギュッと押して、えびのみそをスープに加えるのもOK）</p>
+    <p><b>5. 米を加え、スープから顔が見えるまで煮詰める</b><br>
+        煮立たせたスープに米をサラサラとふり入れ、強火で5分炊き、さらに弱火にして12分かけて炊き上げる<br>
+        仕上げに10～20秒ほど強火にかけておこげを作る。</p>
+    <p><b>6. 魚介を戻し入れ、レモンとイタリアンパセリを飾る</b><br>
+        ④でいったん取り出した魚介を⑤に戻して盛り付け、くし形切りにしたレモンとイタリアンパセリをのせて完成です。</p>
+    
+</td>
+</tr>
+
+</table>
+
+<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+
+</article>
+
+</main>
+
+<footer>
+
+<ul id="footermenu">
+<li><a href="{% url 'promo_index' %}">ホーム</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+    
+<div class="copy">
+<small>Copyright&copy; <a href="{% url 'promo_index' %}">こめこめ蔵部</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<h2>Contents</h2>
+<ul class="submenu">
+    <li><a href="{% url 'promo_index' %}">ホーム</a></li>
+    <li><a href="{% url 'greeting' %}">サイトの紹介</a></li>
+    <li><a href="{% url 'news' %}">News</a></li>
+    <li><a href="{% url 'dining' %}">お料理紹介</a></li>
+    <li><a href="{% url 'service' %}">農家さんの紹介</a></li>
+    <li><a href="{% url 'index' %}">オンラインショップ</a></li>
+    <li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href=""><i class="bi bi-facebook"></i></a></li>
+<li><a href=""><i class="bi bi-twitter"></i></a></li>
+<li><a href=""><i class="bi bi-youtube"></i></a></li>
+<li><a href=""><i class="bi bi-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="{% static 'js/jquery.inview_set.js' %}"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

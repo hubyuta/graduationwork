@@ -1,0 +1,140 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>こめこめ蔵部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="{% url 'promo_index' %}"><img src="{% static 'images/komema-ku1.png' %}" alt="東京北海旅館"></a></h1>
+</header>
+
+<main>
+
+<article>
+
+<h2>11月<span>November</span></h2>
+
+<p class="c"></p>
+
+<p class="c">
+    <br>ロ野球では48年ぶりに阪神が「あれ」し世間を大きく賑わせました。
+    <br>岸田文雄首相とフィリピンのマルコス大統領がマニラで会談、APEC首脳会談に出席した岸田文雄首相は中国の習近平国家主席と会談
+    が行われ外交での活動もかなりありました。
+    <br>政治家の問題も多く明るみに出て日が落ちるのが早くなりすぐ暗くなるように
+    <br>日本全体で政治に対して深く暗くなっていくのを感じました。
+ 
+    <br>急激な冷え込みが起きた11月
+    <br>ダウンやアウターを着る人も増えました。
+    <br>今年は早い時期からインフルエンザが流行り始め
+    <br>小学校などでは学級閉鎖も起きているほどに流行っているようで
+    <br>色々なところで手洗い・うがいやマスクなど各自での感染予防に取り組んでいる人が多くみられました。
+    <br>
+    <br><img src="{% static 'images/kouyou.jpg' %}" alt="">
+    <br>
+    <br>
+</p>
+
+<p class="c">
+    <br>（新嘗祭（にいなめさい）
+    <br>「新嘗祭」の「新」は新穀（初穂）、「嘗」は御馳走を意味し、天照大御神（あまてらすおおみかみ）はじめすべての神様に新穀をお供えして、神様の恵みによって新穀を得たことを感謝するお祭りなのです。
+    <br>五穀豊穣を祈願した2月17日の祈年祭と相対するお祭りで、この日、宮中では天皇陛下が感謝をこめて新穀を奉るとともに、御自らも召し上がります。
+    <br>11月23日には、その他にもお米に関する記念日が設定されています。
+    <br>
+    <br><img src="{% static 'images/niinamesai.png' %}" alt="">
+    <br>
+    <br>（お赤飯の日）
+    <br>古来より日本人の慶びの食事、ハレの日の食卓に欠かせなかった赤飯の歴史と伝統の継承を目的として、
+    <br>一般社団法人赤飯文化啓発協会により、11月23日が「お赤飯の日」に制定されました。
+    <br>これは、古くは皇極天皇の時代より、新嘗祭に赤飯の起源といわれる赤米等の五穀がその年の収穫に感謝をこめて奉納されていたことに由来するものです。
+    <br>
+    <br><img src="{% static 'images/osekihan.jpg' %}" alt="">
+    <br>
+</p>
+
+
+<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+
+</article>
+
+</main>
+
+<footer>
+
+<ul id="footermenu">
+<li><a href="{% url 'promo_index' %}">ホーム</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+    
+<div class="copy">
+<small>Copyright&copy; <a href="{% url 'promo_index' %}">こめこめ蔵部</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<h2>Contents</h2>
+<ul class="submenu">
+    <li><a href="{% url 'promo_index' %}">ホーム</a></li>
+    <li><a href="{% url 'greeting' %}">サイトの紹介</a></li>
+    <li><a href="{% url 'news' %}">News</a></li>
+    <li><a href="{% url 'dining' %}">お料理紹介</a></li>
+    <li><a href="{% url 'service' %}">農家さんの紹介</a></li>
+    <li><a href="{% url 'index' %}">オンラインショップ</a></li>
+    <li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href=""><i class="bi bi-facebook"></i></a></li>
+<li><a href=""><i class="bi bi-twitter"></i></a></li>
+<li><a href=""><i class="bi bi-youtube"></i></a></li>
+<li><a href=""><i class="bi bi-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="{% static 'js/jquery.inview_set.js' %}"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

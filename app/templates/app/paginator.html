@@ -1,0 +1,25 @@
+<nav aria-label="ページ送り">
+    <ul class="pagination mb-5">
+        {% if page_obj.has_previous %}
+            <li class="page-item"><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo;</a></li>
+        {% else %}
+            <li class="page-item disabled"><a href="#" class="page-link">&laquo;</a></li>
+        {% endif %}
+
+        {% for i in data_list %}
+            {% if page_obj.number == i %}
+                <li class="page-item active text-bg-success-subtle"><a href="?page={{ i }}" class="page-link">{{ i }}</a></li>
+            {% elif i == page_obj.paginator.ELLIPSIS %}
+                <li class="page-item disabled"><a href="#" class="page-link">{{ i }}</a></li>
+            {% else %}
+                <li class="page-item"><a href="?page={{ i }}" class="page-link">{{ i }}</a></li>
+            {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+            <li class="page-item"><a href="?page={{ page_obj.next_page_number }}" class="page-link">&raquo;</a></li>
+        {% else %}
+            <li class="page-item disabled"><a href="#" class="page-link">&raquo;</a></li>
+        {% endif %}
+    </ul>
+</nav>

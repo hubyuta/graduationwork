@@ -1,0 +1,130 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>こめこめ蔵部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="{% url 'promo_index' %}"><img src="{% static 'images/komema-ku1.png' %}" alt="東京北海旅館"></a></h1>
+</header>
+
+<main>
+
+<article>
+
+<h2>12月<span>December</span></h2>
+
+<p class="c"><img src="{% static 'images/kurisumasu.jpg' %}" alt=""></p>
+
+<p class="c">
+    <br>自民党パーティー券裏金疑惑発覚し、安倍派の閣僚や自民党幹部が一掃
+    <br>京アニ事件被告に死刑求刑、墜落事故のオスプレイ飛行停止、ダイハツ工業の全車種出荷停止などがありました。
+    <br>また皇后雅子さまが還暦を迎えました。
+    <br>2023年一年の締めくくりを迎えました。筆者も1年を振り返りながらこの記事を書いています。
+    <br>今年は暖冬なのか昨年に比べ暖かい日が多くありました。
+    <br>12月とは思えない気温の日にはアウターを着なくても出歩けるほどの暖かさで
+    <br>とても過ごしやすい時期でもありました。
+    <br>皆様はどんな1年をお過ごしになられたでしょうか
+    <br>このホームページをご覧になられた方に少しでも農家さんのこと・お米の事を知っていただけたなら幸いです。
+    <br>
+    <br>
+</p>
+
+<p class="c">
+    <br>農家さんでは今年獲れた餅米を使って餅をついているところもあるようです。
+    <br>つきたての餅は焼いて食べるものとは違く、とてもやわからく、お米の香りも強く
+    <br>何もつけずに食べてもとても美味しいものになっています。
+    <br>ぜひ機会があれば当ホームページでも開催できればと考えています。
+    <br>来年もホームページ製作者諸々よろしくお願いいたします。
+    <br>来年はページだけでなく農家さんへの訪問など活動を活発にしていきたいと考えております。
+    <br>皆様にとって良い一年になりますこと心よりおりのり申して祈っております。
+    <br>良いお年をお迎えください
+</p>
+
+
+<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+
+</article>
+
+</main>
+
+<footer>
+
+<ul id="footermenu">
+<li><a href="{% url 'promo_index' %}">ホーム</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+    
+<div class="copy">
+<small>Copyright&copy; <a href="{% url 'promo_index' %}">こめこめ蔵部</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<h2>Contents</h2>
+<ul class="submenu">
+    <li><a href="{% url 'promo_index' %}">ホーム</a></li>
+    <li><a href="{% url 'greeting' %}">サイトの紹介</a></li>
+    <li><a href="{% url 'news' %}">News</a></li>
+    <li><a href="{% url 'dining' %}">お料理紹介</a></li>
+    <li><a href="{% url 'service' %}">農家さんの紹介</a></li>
+    <li><a href="{% url 'index' %}">オンラインショップ</a></li>
+    <li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href=""><i class="bi bi-facebook"></i></a></li>
+<li><a href=""><i class="bi bi-twitter"></i></a></li>
+<li><a href=""><i class="bi bi-youtube"></i></a></li>
+<li><a href=""><i class="bi bi-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="{% static 'js/jquery.inview_set.js' %}"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+<div class="pt-5"></div>
+<div class="text-center my-5">
+    <h1 class="mb-5">{{ user_data.first_name }} {{ user_data.last_name }}様、お問い合わせありがとうございました。</h1>
+    <p class="mb-4">受け付けましたお問い合わせについては、後日ご登録いただいているメールアドレス {{ user_data.email }} 宛に返信させていただきます。<br>
+        もうしばらくお待ちください。今後ともご愛顧賜りますようお願い申し上げます。</p>
+    <a href="/app/index" class="btn btn-success">オンラインストアトップへ戻る</a>
+</div>
+
+{% endblock  %}

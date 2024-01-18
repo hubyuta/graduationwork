@@ -1,0 +1,146 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>こめこめ蔵部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="{% url 'promo_index' %}"><img src="{% static 'images/komema-ku1.png' %}" alt="東京北海旅館"></a></h1>
+</header>
+
+<main>
+
+<article>
+
+<h2>5月<span>May</span></h2>
+
+<p class="c"><img src="{% static 'images/koinobori.jpg' %}" alt=""></p>
+
+
+<p class="c">
+<br>ついにコロナが５類に移行しました。
+<br>街中ではマスクをしている人が徐々に減っていき、さまざまな店で人を見ることが多くなりました。
+<br>G7が広島で開催され、各国の首脳による原爆資料館の訪問,生活における電力の値上げなどがありました。
+
+<br>遠くからカエルの合唱が聞こえ始めジメジメとする季節になりました。<br>
+昨年より暑い日が多くあった5月<br>
+雨があまり降らず農家さんにとっては嬉しくない日も続きましたが<br> 
+今年も米の発芽が始まりました。<br>
+すくすくと育ち田植えの準備も着々と行われています。<br>
+来月に田植えが行われるようです。
+<br>
+</p>
+<p class="c">
+    今回は意外と知られていない米の苗について <br>
+    皆様がみたことのある苗は一般的には <br>
+    このようなものが多いと思います <br>
+    <br>
+    <br>
+    <img src="{% static 'images/1.jpg' %}" alt="写真" width="600" height="400"><br>
+    <br>
+    <br>
+
+    しかしこれよりも前の状態を知っている人はわずかだと思います <br>
+    実は稲穂から取り外した、籾殻（もみがら）という硬い殻のついたお米を使っており <br>
+    発芽直後の状態はこんな感じになってるんです <br>
+    <br>
+    <br>
+    <img src="{% static 'images/nae.jpg' %}" alt="写真" width="600" height="400"><br>
+    <br>
+    <br>
+    <br>
+</p>
+
+<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+
+</article>
+
+</main>
+
+<footer>
+
+ <ul class="icons">
+    <li><a href=""><i class="bi bi-facebook"></i></a></li>
+    <li><a href=""><i class="bi bi-twitter"></i></a></li>
+    <li><a href=""><i class="bi bi-youtube"></i></a></li>
+    <li><a href=""><i class="bi bi-instagram"></i></a></li>
+ </ul>
+
+<ul id="footermenu">
+<li><a href="{% url 'promo_index' %}">ホーム</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+
+<div class="copy">
+<small>Copyright&copy; <a href="{% url 'promo_index' %}">こめこめ蔵部</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<h2>Contents</h2>
+<ul class="submenu">
+<li><a href="{% url 'promo_index' %}">ホーム</a></li>
+<li><a href="{% url 'greeting' %}">サイトの紹介</a></li>
+<li><a href="{% url 'news' %}">News</a></li>
+<li><a href="{% url 'dining' %}">お料理紹介</a></li>
+<li><a href="{% url 'service' %}">農家さんの紹介</a></li>
+<li><a href="{% url 'index' %}">オンラインショップ</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href=""><i class="bi bi-facebook"></i></a></li>
+<li><a href=""><i class="bi bi-twitter"></i></a></li>
+<li><a href=""><i class="bi bi-youtube"></i></a></li>
+<li><a href=""><i class="bi bi-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="{% static 'js/jquery.inview_set.js' %}"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>こめこめ蔵部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="{% url 'promo_index' %}"><img src="{% static 'images/komema-ku1.png' %}" alt="東京北海旅館"></a></h1>
+</header>
+
+<main>
+
+<article>
+
+<h2>季節の炊き込みご飯<span></span></h2>
+
+<p class="c"><img src="{% static 'images/kaki.jpg' %}" alt=""></p>
+
+<table class="ta1">
+<caption>ルセット（二人分）</caption>
+<tr>
+<th></th>
+<td><p>米…180ml（1合）</p>
+    <p>かき…8個</p>
+    <p>昆布（5cm四方）…1枚</p>
+    <p>生姜（せん切り）…10g</p>
+    <p>木の芽…お好み</p>
+    <p>塩…適量</p>
+    <p>酒…40ml</p>
+    <p>薄口醤油…大さじ1</p>
+    <p>水…適量</p>
+</td>
+</tr>
+
+
+</table>
+<table class="ta1">
+<caption>作り方（二人分）</caption>
+<tr>
+<th></th>
+<td><p><b>1. 米を洗う</b><br>
+    米は洗ってざるに上げ、30分間おく<br>
+    かきは3%（1lに対して約30g）程度の塩水で洗って汚れを取る。<br>
+    そのあと真水で洗い、紙タオルを敷いたバットにのせて水けをきる。</p>
+    <p><b>2. 牡蠣の処理</b><br>
+        小鍋に酒40mlと塩1つまみを入れて中火にかけ沸いたら①のかきを入れる。<br>
+        海水程度の、3%程度の塩水（水500mlに塩大さじ1）に入れて、やさしくふり洗いする。</p>
+    <p><b>3. 牡蠣の下準備</b><br>
+        塩水で洗って、かきの汚れを取る<br>
+        かきがふくらんで火が入ったらすぐにざるに上げる。煮汁はとっておく <br>
+       （かきがぷっくりとふくらんだら火を止め、身と煮汁に分ける。）</p>
+    <p><b>4.米を火にかける</b><br>
+        ②の煮汁に水を足して220mlにし、①の米、うす口しょうゆと一緒に土鍋に入れる。<br>
+        その上に昆布としょうがをのせ、ふたをして中火にかける。<br>
+        沸いたら鍋底の米粒を菜箸でこそげ、火を弱めて10分間炊く。 <br>
+        （かきのエキスが出た煮汁をベースに水加減して、昆布のうまみも足して炊く。）</p>
+    <p><b>5. 仕上げ</b><br>
+        火を止めて、2のかきを上にのせる。再びふたをして7分間蒸らす。<br>
+        仕上げに木の芽をあしらう。</p>
+    
+</td>
+</tr>
+
+</table>
+
+<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+
+</article>
+
+</main>
+
+<footer>
+
+<ul id="footermenu">
+<li><a href="{% url 'promo_index' %}">ホーム</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+    
+<div class="copy">
+<small>Copyright&copy; <a href="{% url 'promo_index' %}">こめこめ蔵部</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<h2>Contents</h2>
+<ul class="submenu">
+    <li><a href="{% url 'promo_index' %}">ホーム</a></li>
+    <li><a href="{% url 'greeting' %}">サイトの紹介</a></li>
+    <li><a href="{% url 'news' %}">News</a></li>
+    <li><a href="{% url 'dining' %}">お料理紹介</a></li>
+    <li><a href="{% url 'service' %}">農家さんの紹介</a></li>
+    <li><a href="{% url 'index' %}">オンラインショップ</a></li>
+    <li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href=""><i class="bi bi-facebook"></i></a></li>
+<li><a href=""><i class="bi bi-twitter"></i></a></li>
+<li><a href=""><i class="bi bi-youtube"></i></a></li>
+<li><a href=""><i class="bi bi-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="{% static 'js/jquery.inview_set.js' %}"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

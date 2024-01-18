@@ -1,0 +1,146 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>こめこめ蔵部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="{% url 'promo_index' %}"><img src="{% static 'images/komema-ku1.png' %}" alt="東京北海旅館"></a></h1>
+</header>
+
+<main>
+
+<article>
+
+<h2>料理名<span></span></h2>
+
+<p class="c"><img src="{% static 'images/pirafu.jpg' %}" alt=""></p>
+
+<table class="ta1">
+<caption>ルセット（3人分）</caption>
+<tr>
+<th></th>
+<td><p>米…150g</p>
+    <p>ムキエビ…180g</p>
+    <p>玉ねぎ…75g</p>
+    <p>にんじん…30g</p>
+    <p>ピーマン…15g </p>
+    <p>バター…大さじ3/4(9g)</p><br>
+    <p>白ワイン…大さじ1（15g）</p>
+    <p>顆粒コンソメ…小さじ1（3g）</p>
+    <p>塩…小さじ1/6弱（0.9g）</p>
+    <p>水…210ml</p> 
+    <p>コショウ…少々</p>
+ 
+</td>
+</tr>
+
+
+</table>
+<table class="ta1">
+<caption>作り方</caption>
+<tr>
+<th></th>
+<td><p><b>1. 食材の処理</b><br>
+    玉ねぎとにんじんはみじん切りにします。<br>
+    ピーマンは粗みじん切りにします。えびは背わたがあれば取り除きます。</p>
+    <p><b>2. 材料を混ぜ合わせておく</b><br>
+        白ワイン、顆粒コンソメ、塩、コショウ、水を混ぜ合わせておく。 </p>
+    <p><b>3. 米、野菜を炒める</b><br>
+        フライパンにバターを弱火で熱し、玉ねぎ、にんじん、研いでいない米を加え、米が半透明になるまで7分ほど炒めます。。</p>
+    <p><b>4.米を炊く</b><br>
+        一度火を消し、スープを注ぎ入れて平らにならし、えびを並べて蓋をします。<br>
+        再び弱火で熱し、12〜15分加熱します。</p>
+    <p><b>5. 仕上げ</b><br>
+        火を消し、ピーマンを加え、再び蓋をして10〜15分蒸らしたら出来上がりです。。</p>
+   </td>
+</tr>
+
+</table>
+
+<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+
+</article>
+
+</main>
+
+<footer>
+
+<ul id="footermenu">
+<li><a href="{% url 'promo_index' %}">ホーム</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+    
+<div class="copy">
+<small>Copyright&copy; <a href="{% url 'promo_index' %}">こめこめ蔵部</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<h2>Contents</h2>
+<ul class="submenu">
+    <li><a href="{% url 'promo_index' %}">ホーム</a></li>
+    <li><a href="{% url 'greeting' %}">サイトの紹介</a></li>
+    <li><a href="{% url 'news' %}">News</a></li>
+    <li><a href="{% url 'dining' %}">お料理紹介</a></li>
+    <li><a href="{% url 'service' %}">農家さんの紹介</a></li>
+    <li><a href="{% url 'index' %}">オンラインショップ</a></li>
+    <li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href=""><i class="bi bi-facebook"></i></a></li>
+<li><a href=""><i class="bi bi-twitter"></i></a></li>
+<li><a href=""><i class="bi bi-youtube"></i></a></li>
+<li><a href=""><i class="bi bi-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="{% static 'js/jquery.inview_set.js' %}"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

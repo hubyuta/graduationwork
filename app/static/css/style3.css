@@ -1,0 +1,36 @@
+/*mainブロック設定
+---------------------------------------------------------------------------*/
+/*mainブロックの設定*/
+main {
+	margin: 2rem 0;	/*ブロックの外側（上下、左右）に空けるスペース*/
+}
+
+/*メインエリア*/
+main.column .main-area {
+	margin-bottom: 30px;	/*ボックスの下に空けるスペース。sub-areaとの間の余白です。*/
+}
+
+	/*画面幅900px以上の追加指定*/
+	@media screen and (min-width:900px) {
+
+	/*カラムで使う為の指定*/
+	main.column {
+		display: flex;	/*flexボックスを使う指定*/
+		justify-content: space-between;	/*並びかたの種類の指定*/
+	}
+	
+	/*メインエリア*/
+	main.column .main-area {
+		margin-bottom: 0;
+		order: 2;				/*並び順。数字の小さい順番に表示されます。*/
+		flex: 1;
+		margin-left: 10px;		/*sub-areaとの間に空けるスペース*/
+	}
+	
+	/*サブエリア*/
+	main.column .sub-area {
+		order: 1;		/*並び順。数字の小さい順番に表示されます。*/
+		width: 230px;	/*幅*/
+	}
+
+	}/*追加指定ここまで*/

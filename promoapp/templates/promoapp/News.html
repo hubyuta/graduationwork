@@ -1,0 +1,217 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>こめこめ蔵部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="{% url 'promo_index' %}"><img src="{% static 'images/komema-ku1.png' %}" alt="こめこめ蔵部"></a></h1>
+</header>
+
+<main>
+
+<article>
+
+    <h2>Topic<span>2023</span></h2>
+  
+<div class="list">
+	<figure><img src="{% static 'images/koinobori.jpg' %}" alt="" ></figure>
+	<div>
+	<h4><a href="{% url 'five' %}">稲になる前って…</a></h4>
+	<b>5月</b><br>
+	<p>ついにコロナが５類に移行しました。街中ではマスクをしている人が徐々に減っていき、
+		さまざまな店で人を見ることが多くなりました。G7が広島で開催され、各国の首脳による原爆資料館の訪問や
+	生活における電力の値上げなどがありました。
+	<br>その頃農家さんもあるところ訪れていました。</p>
+	</div>
+</div>
+
+<div class="list">
+	<figure><img src="{% static 'images/azisai.jpg' %}" alt="" ></figure>
+	<div>
+	<h4><a href="{% url 'six' %}">「夏越ごはんの日」</a></h4>
+	<b>6月</b><br>
+	<p>藤井聡太さんが最年少の名人&7冠獲得になり世間を驚かせました。
+		スポーツ界では、テニス、ボクシング、バスケットボールなど様々な分野で盛り上がりを見せました。
+		またこの月に新紙幣の発表が財務省から行われ2024月7月をめどに1万円札・5千円札・千円札の発行が予定されている。
+		<br>農家さんでも新しい苗の発送が完了し、次の行程に移ろうとしている。
+			</p>
+	</div>
+</div>
+
+<div class="list">
+	<figure><img src="{% static 'images/utiwa.jpg' %}" alt="" ></figure>
+	<div>
+	<h4><a href="{% url 'seven' %}">土用の丑の日の由来って…</a></h4>
+	<b>7月</b><br>
+	<p>梅雨明けが例年より遅く大雨もあり、気分が晴れない日が多い中、大手メーカーでは保険金の不正請求問題が
+		発覚し社長が辞任したり、親しみのあった『Twitter』が『X』に名前が変更されるなどなど少しジメッとした話題が多くありました。
+		そんな梅雨明けと同時に晴れやかな話題もありました。女子W杯開催や男子バレーが国際大会で銅メダル、ボクシングにおいては日本で二人目の4階級の制覇など
+		ジメッとした空気を飛ばしてくれました。
+		<br>農家さんも梅雨が明け本格的な夏に向け準備？を始めています。
+			</p>
+	</div>
+</div>
+
+<div class="list">
+	<figure><img src="{% static 'images/hanabi.jpg' %}" alt="" ></figure>
+	<div>
+	<h4><a href="{% url 'eight' %}">お米の日？？</a></h4>
+	<b>8月</b><br>
+	<p>毎年明治神宮で行われる甲子園では慶應高校が107年ぶりの優勝を果たしました。なでしこJAPANはベスト8に進出し
+		大谷翔平選手は史上初となる「2年連続2桁勝利・2桁本塁打」の偉業を達成しました。
+		日本ではこの月から処理水の海洋放出作業を開始しました。また日米韓3カ国の首脳が米ワシントン近郊で会談。3首脳が国際会議に合わせてではなく、
+		単独で会談するのは初めてであり。安全保障協力の強化や首脳会議を毎年定例化することなどで合意したとのこと。
+		<br>農家さんでは夏の害虫から稲を守るための防衛を強化しています。
+			</p>
+	</div>
+</div>
+
+<div class="list">
+	<figure><img src="{% static 'images/tukimi.jpg' %}" alt="" ></figure>
+	<div>
+	<h4><a href="{% url 'nine' %}">今更だけど古米って？？</a></h4>
+	<b>9月</b><br>
+	<p>今年で関東大震災から100年の追悼式が行われました。
+		プロ野球ではリーグごとに阪神の18年ぶりセ・リーグ制覇、オリックスのパ・リーグ3連覇、
+		また第2次岸田再改造内閣の発足、東芝のTOB成立と上場廃止の見通しなどが行われました。
+		<br>田んぼでは秋の色彩祭りが行われ稲それぞれが黄金色に輝き始めています。
+
+	</p>
+	</div>
+</div>
+
+<div class="list">
+	<figure><img src="{% static 'images/harowin.jpg' %}" alt="" ></figure>
+	<div>
+	<h4><a href="{% url 'ten' %}">待望の新米</a></h4>
+	<b>10月</b><br>
+	<p>1日に最低賃金の改定が行われ平均で43円引き上げられました。
+	   ジャニーズ事務所の性加害問題により「SMILE-UP.」に社名を変更し、被害者への補償後に廃業すると発表、
+	   全国の銀行間の資金決済を担う全銀システムで障害が発生、他行宛ての振り込みができなくなったりなど
+	   暗いニュースが多く報道された時期でもありました。
+	   <br>その頃農家さんでは一番大切な時期となりました。
+
+
+	</p>
+	</div>
+</div>
+
+<div class="list">
+	<figure><img src="{% static 'images/kouyou.jpg' %}" alt="" ></figure>
+	<div>
+	<h4><a href="{% url 'eleven' %}">新嘗祭</a></h4>
+	<b>11月</b><br>
+	<p>プロ野球では48年ぶりに阪神が「あれ」し世間を大きく賑わせました。
+		岸田文雄首相とフィリピンのマルコス大統領がマニラで会談、APEC首脳会談に出席した岸田文雄首相は中国の習近平国家主席と会談
+		が行われ外交での活動もかなりありました。
+		政治家の問題も多く明るみに出て日が落ちるのが早くなりすぐ暗くなるように
+		日本全体で政治に対して深く暗くなっていくのを感じました。
+       <br>稲の収穫が終わり農家さんも一休みできるのでしょうか。
+	</p>
+	</div>
+</div>
+<div class="list">
+	<figure><img src="{% static 'images/kurisumasu.jpg' %}" alt="" ></figure>
+	<div>
+	<h4><a href="{% url 'twelve' %}">今年も終わりを迎えます</a></h4>
+	<b>12月</b><br>
+	<p>自民党パーティー券裏金疑惑発覚し、安倍派の閣僚や自民党幹部が一掃
+		京アニ事件被告に死刑求刑、墜落事故のオスプレイ飛行停止、ダイハツ工業の全車種出荷停止などがありました。
+		また皇后雅子さまが還暦を迎えました。
+		2023年一年の締めくくりを迎えました。筆者も1年を振り返りながらこの記事を書いています。
+		<br>一部の農家さんでは餅つきが行われ、年を越す準備も始まっています。
+
+
+	</p>
+	</div>
+</div>
+
+
+<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+<p class="c"><a href="javascript:history.next()">次のページに進む&gt;&gt;</a></p>
+
+</article>
+
+</main>
+
+<footer>
+
+<ul id="footermenu">
+<li><a href="{% url 'promo_index' %}">ホーム</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+
+<div class="copy">
+<small>Copyright&copy; <a href="{% url 'promo_index' %}">こめこめ蔵部</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<h2>Contents</h2>
+<ul class="submenu">
+<li><a href="{% url 'promo_index' %}">ホーム</a></li>
+<li><a href="{% url 'greeting' %}">サイトの紹介</a></li>
+<li><a href="{% url 'news' %}">News</a></li>
+<li><a href="{% url 'dining' %}">お料理紹介</a></li>
+<li><a href="{% url 'service' %}">農家さんの紹介</a></li>
+<li><a href="{% url 'index' %}">オンラインショップ</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href=""><i class="bi bi-facebook"></i></a></li>
+<li><a href=""><i class="bi bi-twitter"></i></a></li>
+<li><a href=""><i class="bi bi-youtube"></i></a></li>
+<li><a href=""><i class="bi bi-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="{% static 'js/jquery.inview_set.js' %}"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+<div class="pt-5"></div>
+<div class="text-center my-5">
+    <h1 class="mb-5">{{ user_data.first_name }} {{ user_data.last_name }}様ご注文ありがとうございました。</h1>
+    <p class="mb-4">配送準備が出来次第、ご登録頂いている住所 "{{ user_data.address }}" へ商品を発送いたします。今後ともご愛顧賜りますようお願い申し上げます</p>
+    <a href="/app/index" class="btn btn-success">買い物を続ける</a>
+</div>
+
+{% endblock  %}

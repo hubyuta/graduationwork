@@ -1,0 +1,134 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>こめこめ蔵部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="{% static 'images/komema-ku1.png' %}" alt="東京北海旅館"></a></h1>
+</header>
+
+<main>
+
+<article>
+
+<h2>8月<span>August</span></h2>
+
+<p class="c"><img src="{% static 'images/hanabi.jpg' %}" alt=""></p>
+
+<p class="c">
+    <br>毎年明治神宮で行われる甲子園では慶應高校が107年ぶりの優勝を果たしました。
+    <br>なでしこJAPANはベスト8に進出し大谷翔平選手は史上初となる「2年連続2桁勝利・2桁本塁打」の偉業を達成しました。
+    <br>日本ではこの月から処理水の海洋放出作業を開始しました。
+    <br>また日米韓3カ国の首脳が米ワシントン近郊で会談。3首脳が国際会議に合わせてではなく、
+    単独で会談するのは初めてであり。安全保障協力の強化や首脳会議を毎年定例化することなどで合意したとのこと。
+
+    <br>子供達の元気な声が響く中
+    <br>全国的に記録的な猛暑が続きましたが
+    <br>稲は成長し稲穂をつけまだまだ未熟ながらもたくさんの実をつけています
+    <br>来月になると少しづつ色づき始め秋の訪れを感じられるようになるのでしょう
+    <br>
+    <br><img src="{% static 'images/8gatu1.jpg' %}" alt="" width="400" height="300">
+    <br>
+    <br>
+    <br>
+</p>
+
+<p class="c">
+    <br>今回はまさに米に関する雑学です
+    <br>8月18日はお米の日
+    <br>諸説ありますが、米という字は八・十・八の字からできており
+    <br>それに因んで8月18日がお米の日となったと言われています
+    <br>また、お米を作るのに八十八の作業があることにも由来していると言われています。
+    <br>
+    <br><img src="{% static 'images/8gatu2.jpg' %}" alt="" width="400" height="300">
+    <br>
+    <br>
+</p>
+
+<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+
+</article>
+
+</main>
+
+<footer>
+
+<ul id="footermenu">
+<li><a href="{% url 'promo_index' %}">ホーム</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+    
+<div class="copy">
+<small>Copyright&copy; <a href="{% url 'promo_index' %}">こめこめ蔵部</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<h2>Contents</h2>
+<ul class="submenu">
+    <li><a href="{% url 'promo_index' %}">ホーム</a></li>
+    <li><a href="{% url 'greeting' %}">サイトの紹介</a></li>
+    <li><a href="{% url 'news' %}">News</a></li>
+    <li><a href="{% url 'dining' %}">お料理紹介</a></li>
+    <li><a href="{% url 'service' %}">農家さんの紹介</a></li>
+    <li><a href="{% url 'index' %}">オンラインショップ</a></li>
+    <li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href=""><i class="bi bi-facebook"></i></a></li>
+<li><a href=""><i class="bi bi-twitter"></i></a></li>
+<li><a href=""><i class="bi bi-youtube"></i></a></li>
+<li><a href=""><i class="bi bi-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="{% static 'js/jquery.inview_set.js' %}"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

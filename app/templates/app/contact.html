@@ -1,0 +1,33 @@
+{% extends "app/base.html" %}
+{% load widget_tweaks %}
+
+{% block content %}
+
+{% comment %} <div class="pt-5"></div>
+<div class="text-center mx-auto mt-5">
+    <h3>商品のお問い合わせはこちらからお願いします。</h3>
+</div> {% endcomment %}
+<div class="pt-5">
+</div>
+    <div class="container">
+        <div class="row">
+          <div class="contact-info col-md-8 mx-auto mb-4 text-center">
+            <h3>製品についてのお問い合わせ・ご意見はこちら</h3> 
+          </div>
+        </div>
+
+        <form action="{% url 'contact_check' %}" method="post" class="row g-3 justify-content-center mb-4">
+            {% csrf_token %}
+          <p>氏名：{{ form.name|add_class:"box-1 col-md-3 form-control"|attr:"placeholder=氏名（必須）" }}</p>
+          {% comment %} <p class="form-control col-md-6">氏名：{{user_data.first_name}} {{user_data.last_name}}</p> {% endcomment %}
+          <p>メールアドレス：{{ form.email|add_class:"box-2 col-md-3 form-control"|attr:"placeholder=メールアドレス（必須）" }}</p>
+          {% comment %} <p class="form-control col-md-6">メールアドレス：{{user_data.email}}</p> {% endcomment %}
+          <p>商品名：{{ form.product_name|add_class:"box-3 col-md-5 form-control"|attr:"placeholder=商品名" }}</p>
+          <p>件名：{{ form.subject|add_class:"box-3 col-md-5 form-control"|attr:"placeholder=件名" }}</p>
+          <p>メッセージ：{{ form.message|add_class:"box-4 col-md-5 form-control"|attr:"placeholder=メッセージ（最低１０文字以上入力してください）" }}</p>
+          <div class="box-5 col-md-10 d-grid">
+            <input type="submit" value="送信" class="btn btn-success btn-main1">
+          </div>
+        </form>
+    </div>
+{% endblock  %}

@@ -1,0 +1,150 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>こめこめ蔵部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="{% url 'promo_index' %}"><img src="{% static 'images/komema-ku1.png' %}" alt="東京北海旅館"></a></h1>
+</header>
+
+<main>
+
+<article>
+
+<h2>チャーハン<span></span></h2>
+
+<p class="c"><img src="{% static 'images/cha-han.jpg' %}" alt=""></p>
+
+<table class="ta1">
+<caption>ルセット（1人分）</caption>
+<tr>
+<th></th>
+<td>
+<p>冷やごはん…180g（茶碗山盛り1杯）</p>
+<p>卵…1個</p>
+<p>チャーシュー（細かく刻む）…30g（ハムなどでも可）</p>
+<p>えび（ボイルしたもの・細かく刻む）…20g（お好みで）</p>
+<p>青ねぎ（小口切り）…15g</p>
+<p>しょうが（みじん切り）…少々</p>
+<p>サラダ油…小さじ2</p>
+<p>塩、こしょう…各少々</p>
+<p>しょうゆ…小さじ1〜1と1/2</p>
+</td>
+</tr>
+
+
+</table>
+<table class="ta1">
+<caption>作り方</caption>
+<tr>
+<th></th>
+<td><p><b>1. ごはんは水洗いし、よく水けをきる</b><br>
+    冷やごはんはさっと水洗いしてザルにあげ、ペーパータオルで水けを取ります。<br>
+    ペーパータオルにお米がつきやすいので注意してください。</p>
+    <p><b>2. フライパンにサラダ油、しょうがを入れて中火にかける</b><br>
+        フライパンにサラダ油を入れて全体になじませ、しょうがを加えて強火にかけます。<br>
+        「しょうがは『風味づけ』ではなく、油の『におい消し』という理由で加えます」 </p>
+    <p><b>3. 卵を加え、大きく混ぜる</b><br>
+        油を十分に熱したら溶いた卵を一気に加え、木べらで大きくかき混ぜます。</p>
+    <p><b>4.ごはんを加え、ほぐすように炒める</b><br>
+        卵が半熟状に固まったら1を加え、ごはんをほぐして卵となじむように木べらで混ぜながら炒めます。<br>
+        ※家庭用のコンロでは火力が強くないためフライパンを火から離さないようにすることがポイントです。</p>
+    <p><b>5. 塩、こしょうをふる</b><br>
+        ごはんと卵がよく混ざり、水分が飛んだら、塩、こしょうをふってさっと炒めます。</p>
+    <p><b>6. チャーシュー、えびを加える</b><br>
+        チャーシュー、えびを加えて炒めます。</p>
+    <p><b>青ねぎを加えてさっと炒める</b><br>
+        軽く炒めたら青ねぎを加えます。</p>
+    <p><b>8. しょうゆを鍋肌から加え、さっと混ぜたら完成！</b><br>
+        さっと炒めたらしょうゆを鍋肌に当てるようにして加え、全体をよく混ぜます。</p>
+</td>
+</tr>
+</table>
+
+<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+
+</article>
+
+</main>
+
+<footer>
+
+<ul id="footermenu">
+<li><a href="{% url 'promo_index' %}">ホーム</a></li>
+<li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+    
+<div class="copy">
+<small>Copyright&copy; <a href="{% url 'promo_index' %}">こめこめ蔵部</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<h2>Contents</h2>
+<ul class="submenu">
+    <li><a href="{% url 'promo_index' %}">ホーム</a></li>
+    <li><a href="{% url 'greeting' %}">サイトの紹介</a></li>
+    <li><a href="{% url 'news' %}">News</a></li>
+    <li><a href="{% url 'dining' %}">お料理紹介</a></li>
+    <li><a href="{% url 'service' %}">農家さんの紹介</a></li>
+    <li><a href="{% url 'index' %}">オンラインショップ</a></li>
+    <li><a href="{% url 'promo_contact' %}">お問合せ</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href=""><i class="bi bi-facebook"></i></a></li>
+<li><a href=""><i class="bi bi-twitter"></i></a></li>
+<li><a href=""><i class="bi bi-youtube"></i></a></li>
+<li><a href=""><i class="bi bi-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="{% static 'js/jquery.inview_set.js' %}"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
